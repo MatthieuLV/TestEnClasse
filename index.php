@@ -6,7 +6,7 @@ require_once '../modele/Voiture.php';
 require_once '../modele/Marque.php';
 require_once '../modele/Location.php';
 
-$peugeot = new Marque('Peugeot');     
+$peugeot = new Marque('Peugeot');
 $audi = new Marque('Audi');
 
 $vehicule = new Voiture($peugeot, '308', 2019);
@@ -50,3 +50,6 @@ $location2
 
 var_dump($client1);
 var_dump($client2);
+echo 'wshbien';
+
+?>
