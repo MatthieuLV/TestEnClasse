@@ -1,12 +1,12 @@
 <?php
 
-require_once 'Entreprise.php';
-require_once 'Personne.php';
-require_once 'Voiture.php';
-require_once 'Marque.php';
-require_once 'Location.php';
+require_once '../modele/Entreprise.php';
+require_once '../modele/Personne.php';
+require_once '../modele/Voiture.php';
+require_once '../modele/Marque.php';
+require_once '../modele/Location.php';
 
-$peugeot = new Marque('Peugeot');
+$peugeot = new Marque('Peugeot');     
 $audi = new Marque('Audi');
 
 $vehicule = new Voiture($peugeot, '308', 2019);
@@ -47,3 +47,6 @@ $location2 = new Location();
 $location2
     ->setClient($client2)
     ->setVehicule($vehicule2);
+
+var_dump($client1);
+var_dump($client2);
